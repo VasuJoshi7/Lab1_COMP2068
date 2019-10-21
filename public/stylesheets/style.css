@@ -1,0 +1,14 @@
+body {
+  /* padding: 40px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.landingPage{
+  background-image: url("../images/baground1.jpg");
+  height: 100vh;
+}

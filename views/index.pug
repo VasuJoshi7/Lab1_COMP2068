@@ -1,0 +1,19 @@
+extends layout
+
+mixin card(imgSrc,title,desc,link)
+    .card(style='width:230px;margin:10px 10px;padding:5px 5px;')
+      img.card-img-top(src=imgSrc, alt='Card image',width='150',height='150' style='width:100%')
+      .card-body
+        h4.card-title=title
+        p.card-text=desc
+        a.btn.btn-primary(href=link,style='float: right;') Learn more
+
+
+block content
+  .landingPage.container-fluid
+    div(style="text-align:center;")
+      div
+        h1 Welcome To Online Learning 
+    .row
+      each val, index in list
+        +card(val.imgSrc,val.title,val.desc,val.link)

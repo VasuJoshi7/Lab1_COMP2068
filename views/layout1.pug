@@ -1,0 +1,16 @@
+extends layout
+mixin nav-item(title,link)
+  li.nav-item
+    a.nav-link(href=link)=title
+block content
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a.navbar-brand(href='/home')
+      img.d-inline-block.align-top(src='/images/pug-logo.png' width='30' height='30' alt='')
+      |     Home
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav
+        +nav-item("COMP1006","/COMP1006")
+        +nav-item("COMP2003","/COMP2003")
+        +nav-item("COMP2084","/COMP2084")
+        +nav-item("COMP2068","/COMP2068")
+        +nav-item("COMP3025","/COMP3025")
